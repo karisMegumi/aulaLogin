@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>templates</title>
+</head>
+<style>
+    h1 {text-align: center;}
+    p {text-align: center;}
+
+    a.button {
+        padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #042baa;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    }
+
+    .button:hover {background-color: #3584b9}
+
+    .button:active {
+    background-color: #2a7aaf;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+    }
+
+</style>
+<body>
+    <h1>🙃PAGINA INICIAL🙃</h1>
+
+    <footer>
+        <tr>
+            <p> <td> <a href = '{{ url_for('index') }}' class = 'button'> Home</a> </td> 
+             <td> <a href = '{{ url_for('produto') }}' class = 'button'> Produtos</a> </td> 
+             <td> </td><a href = '{{ url_for('login') }}' class = 'button'> Pagina de login</a> </td> </p>
+        </tr>
+    </footer>
+
+</body>
+</html>
